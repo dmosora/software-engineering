@@ -1,0 +1,8 @@
+# VSCode looks for .pylintrc at top of the current open folder (The project in Coder.com)
+# If this isn't at the top level, you can make a hard link to it using the command:
+# ln /path/to/this/.pylintrc /coder/mnt/<username>/<project_name>/.pylintrc
+[MESSAGES CONTROL]
+disable=missing-docstring
+
+[VARIABLES]
+additional-builtins=given,then,when
