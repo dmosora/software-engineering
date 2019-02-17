@@ -3,7 +3,8 @@ import requests
 # Star Wars API - Investigation (https://swapi.co)
 base_url = "https://swapi.co/api/"
 
-# 10000 API requests per day (from SWAPI docs https://swapi.co/documentation under "Rate Limiting")
+# Working through SWAPI Documentation: https://swapi.co/documentation
+# 10000 API requests per day (from SWAPI docs under "Rate Limiting")
 # TODO: If we're hosting this as a website, we need to work around this:
 # Options: 
 # - Caching the data, only request every X hours
