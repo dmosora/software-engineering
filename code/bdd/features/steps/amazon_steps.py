@@ -4,6 +4,7 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
+# Pylint code to name mapping: https://github.com/janjur/readable-pylint-messages
 from behave import * # pylint:disable=wildcard-import,unused-wildcard-import
 
 from webdriver_manager.chrome import ChromeDriverManager
