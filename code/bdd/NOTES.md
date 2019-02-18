@@ -4,13 +4,4 @@ Behave requires a strict naming scheme and folder structure out of the box. Feat
 
 ## Setup
 
-```
-pip install selenium
-pip install behave
-pip install webdriver-manager
-```
-
-### Open Question
-
-Coder.com does not come able to run using selenium running Chrome headless out of the box.
-Is there a standard way to do this?
+For running on Coder.com, follow the setup instructions in the [wiki](https://github.com/dmosora/software-engineering/wiki/Selenium-on-Coder.com).
