@@ -1,0 +1,1 @@
+# Empty __init__.py makes this folder a module, so nose can pick up the tests here when run from /code/tdd
