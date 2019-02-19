@@ -4,6 +4,7 @@ class TestPythonCode(unittest.TestCase):
     """
     These tests are evaluating code that is part of the Python standard library.
     Framework code is assumed to be tested already, so these aren't testing much.
+    CPython's test suite: https://github.com/python/cpython/tree/master/Lib/test
     """
     def test_list_append(self):
         starting_list = []
