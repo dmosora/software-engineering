@@ -6,5 +6,5 @@ install:
   - pip install nose
   - pip install behave selenium webdriver_manager pyvirtualdisplay
 script:
-  - cd code/tdd && nosetests
-  - cd code/bdd && behave --tags=run
+  - cd $TRAVIS_BUILD_DIR/code/tdd && nosetests
+  - cd $TRAVIS_BUILD_DIR/code/bdd && behave --tags=run
