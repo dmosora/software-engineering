@@ -7,4 +7,4 @@ install:
   - pip install behave selenium webdriver_manager pyvirtualdisplay
 script:
   - cd code/tdd && nosetests
-  - cd code/bdd && behave
+  - cd code/bdd && behave --tags=run

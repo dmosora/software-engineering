@@ -16,7 +16,11 @@ class SWAPIClient():
 
         browser <-> flask-server <-> SWAPIClient <-> SWAPI
         """
-        character_data = self.get_data("Luke Skywalker")
+        try:
+            character_data = self.get_data("Luke Skywalker")
+        except Exception as ex:
+            return {"error": True, "message": str(ex)}
+
         # TODO: Merge with other data? From DB?
         # TODO: Test all of these functions, structural test for this function
         # etc...

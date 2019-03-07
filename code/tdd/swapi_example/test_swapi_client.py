@@ -1,10 +1,10 @@
 import unittest
 from unittest import mock
 
-from swapi_client import SWAPIClient
+from swapi_example.swapi_client import SWAPIClient
 
 # Moved to other file for readability
-from swapi_test_data import full_api_luke_data
+from swapi_example.swapi_test_data import full_api_luke_data
 
 class TestSwapiClient(unittest.TestCase):
     def setUp(self):
