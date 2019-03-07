@@ -1,4 +1,5 @@
 import time
+import os.path
 
 from pyvirtualdisplay import Display
 from selenium import webdriver
@@ -20,7 +21,7 @@ def setup_chrome():
     options.add_argument("--no-sandbox")
 
     # Add debugging options, logs for each run will overwrite the file here
-    service_log_path = "/var/log/chromedriver.log"
+    service_log_path = os.path.join(os.path.expanduser("~"), "chromedriver.log")
     service_args = ['--verbose']
     return webdriver.Chrome(ChromeDriverManager().install(),
                             options=options,

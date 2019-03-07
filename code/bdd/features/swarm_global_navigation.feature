@@ -1,5 +1,6 @@
 Feature: Site Navigation Menu
 
+@no-impl
 Scenario: Navigate to characters
     Given that I am a user on SWARM.
     When I open the menu
@@ -7,18 +8,21 @@ Scenario: Navigate to characters
     Then I should see a random character bio
     And I should see a picture of that character
 
+@no-impl
 Scenario: Navigate to spaceships
     Given that I am a user on SWARM
     When I open the menu
     And I select spaceships
     Then I should see a choice of Factions on a timeline
 
+@no-impl
 Scenario: Navigate to planets
     Given that I am a user on SWARM
     When I open the menu
     And I select planets
     Then I should see a visualization of the Star Wars universe
 
+@no-impl
 Scenario: Navigate to species for planet
     Given that I am a user on SWARM
     And I navigate to planets
