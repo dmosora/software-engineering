@@ -15,4 +15,4 @@ script:
   - cd $TRAVIS_BUILD_DIR/code/tdd && nosetests
   - cd $TRAVIS_BUILD_DIR/code/bdd && behave --tags=run
 after_failure:
-  - cat /var/log/chromedriver.log
+  - cat $HOME/chromedriver.log
