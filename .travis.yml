@@ -2,16 +2,12 @@ language: python
 python:
   - "3.4.3"
 cache: pip
-services:
-  - xvfb
-addons:
-  chrome: stable
 before_install:
-  - sudo apt-get install xvfb
-  - sudo apt-get update && apt-get install libxss1 libappindicator1 libindicator7
+  - sudo apt-get install -y xvfb
+  - sudo apt-get update && apt-get install -y libxss1 libappindicator1 libindicator7
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - sudo dpkg -i google-chrome*.deb
-  - sudo apt-get install -f
+  - sudo apt-get install -fy
 install:
   - pip install nose
   - pip install behave selenium webdriver_manager pyvirtualdisplay
