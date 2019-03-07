@@ -1,1 +1,10 @@
 language: python
+python:
+  - "3.7"
+cache: pip
+install:
+  - pip install nose
+  - pip install behave selenium webdriver_manager pyvirtualdisplay
+script:
+  - cd code/tdd && nosetests
+  - cd code/bdd && behave
