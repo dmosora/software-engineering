@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.4.3"
+cache: pip
+services:
+  - xvfb
+addons:
+  chrome: stable
+install:
+  - pip install nose
+  - pip install behave selenium webdriver_manager pyvirtualdisplay
+script:
+  - cd $TRAVIS_BUILD_DIR/code/tdd && nosetests
+  - cd $TRAVIS_BUILD_DIR/code/bdd && behave --tags=run
+after_failure:
+  - cat $HOME/chromedriver.log
