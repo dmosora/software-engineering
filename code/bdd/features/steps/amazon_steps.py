@@ -20,7 +20,7 @@ def setup_chrome():
     options.add_argument("--no-sandbox")
 
     # Add debugging options, logs for each run will overwrite the file here
-    service_log_path = "/var/log/chromedriver.log"
+    service_log_path = "chromedriver.log"
     service_args = ['--verbose']
     return webdriver.Chrome(ChromeDriverManager().install(),
                             options=options,
