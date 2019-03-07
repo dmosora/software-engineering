@@ -5,6 +5,11 @@ cache: pip
 install:
   - pip install nose
   - pip install behave selenium webdriver_manager pyvirtualdisplay
+  - apt-get install xvfb
+  - apt-get update && apt-get install libxss1 libappindicator1 libindicator7
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - dpkg -i google-chrome*.deb
+  - apt-get install -f
 script:
   - cd $TRAVIS_BUILD_DIR/code/tdd && nosetests
   - cd $TRAVIS_BUILD_DIR/code/bdd && behave --tags=run
